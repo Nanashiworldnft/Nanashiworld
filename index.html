@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Nanashi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="shortcut icon" type="image/png" href="images/nav.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+    
+    
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+    <div class="logo"><a href="#">NANASHI</a></div>
+    <ul class="menu-list">
+      <div class="icon cancel-btn">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <li><a class="active" href="#" id="navhome">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#world">WORLD</a></li>
+      <li><a href="#about">COLLECT!</a></li>
+
+      
+    </ul>
+    <div class="icon menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    </div>
+</nav>
+
+<script>
+  const navbar = document.querySelector(".navbar");
+  const menu = document.querySelector(".menu-list");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    menu.classList.add("active");
+    menuBtn.classList.add("hide");
+  }
+  cancelBtn.onclick = ()=>{
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+
+  <section id="home">
+    <img src="images/web.gif" id="logo1">
+    <img src="images/back.png" id="back">
+    <img src="images/mid.png" id="mid">
+    <img src="images/front.png" id="front">
+  </section>
+
+
+  <script>
+    
+    let logo1 = document.getElementById('logo1');
+    let back = document.getElementById('back');
+    let mid = document.getElementById('mid');
+    let front = document.getElementById('front');
+    
+
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+
+      
+      logo1.style.top = value * 0.4 + 'px';
+      mid.style.top = value * 0.25 + 'px';
+      back.style.top = value * 0.4 + 'px';
+  
+    }
+    )
+  </script>
+
+<!-----------About--------------->
+
+<section id="mainsection">
+<section id="about">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+    
+    <h4 class="aboutus">INTRODUCTION</h4>
+  </div>
+
+  
+  <div class="col-md-6">
+    <h1 class="aboutus1">Nanashi is a community-driven, Isekai-themed NFT collection. It is a collection of 10,000 uniquely hand-drawn, high-quality NFTs.</h1>
+
+    <h1 class="aboutus2">Nanashi (名無し) is a Japanese word that means "nameless". Nanashi does not remember his name or his whole identity. He traveled to multiple worlds to uncover the truth about his identity and this Isekai world." 
+    </h1>
+
+      <h1 class="aboutus2">Let's explore multiple worlds and uncover the mystery of this Isekai world.
+      </h1>
+
+      <h1 class="aboutus3"></h1>
+      <h4 class="aboutus4"></h4>
+      <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+      <a href="#"><button class="howtobuybtn">COLLECT</button></a></div>
+      </div>
+      </div>
+  </div>
+  <div class="col-md-6">
+    <img src="images/33.png" class="aboutimage">
+</div>
+  </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-----------world--------------> 
+
+<section id="world">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+    
+    <h4 class="worldtext">WORLD</h4>
+  </div>
+  <div class="col-md-12">
+    <h1 class="worldtext1">Nanashi discovered a way to travel to different worlds and times, hoping that one day he would find the truth about his identity and this Isekai world. Join our journey, and let's collect every piece of his memory.</h1></div></div>
+  </div>
+  </div>
+</div></section>
+
+  
+
+<section id="worldicon">
+  
+  <div class="container text-center">
+      
+    
+        <div class="world-icons2">
+          <div class="col-md-12">
+          <a href="#"><img src="images/world1.png"></a>
+         
+      </div>
+        <div class="col-md-12">
+        <a href="#world"><img src="images/world2.png"></a>
+       
+    </div>
+    <div class="col-md-12">
+      <a href="#world"><img src="images/world3.png"></a>
+     
+  </div>
+    </div>
+    </section>
+
+
+<!-----------social--------------->   
+<section id="socials">
+  
+<div class="container text-center">
+    
+    
+    <p class="calendartext">AS SEEN ON:</p>
+      <div class="calendar-icons2">
+        <div class="col-md-12">
+        <a href="https://twitter.com/Nanashinft"><img src="images/SOCIAL-TWITTER-white2.png"></a>
+
+        <a href="#"><img src="images/SOCIAL-OPENSEA2.png"></a>
+        <a href="#"><img src="images/etherscan-logo-circle.png"></a>
+
+        <a href="https://nftcalendar.io/"><img src="images/NFTCALENDAR.webp"></a>
+        <a href="#"><img src="images/nftwatcher2.png"></a>
+        <a href="https://www.nestree.io/"><img src="images/nestree.png"></a>
+        </div>
+     
+    </div>
+  </div>
+  </section>
+<!-----------FOOTER--------------->   
+    <section id="arsbg">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <h1 class="ars"> <img src="images/nav.png" class="navlogo">
+          名無し (Nanashi) © 2023. All rights reserved. </h1>
+</section>
+</section>
+
+<script src="smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script> 
+</body>
+
+</html>

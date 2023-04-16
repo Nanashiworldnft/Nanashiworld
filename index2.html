@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Nanashi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="shortcut icon" type="image/png" href="images/nav.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+    
+    
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+    <div class="logo"><a href="#">NANASHI</a></div>
+    <ul class="menu-list">
+      <div class="icon cancel-btn">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <li><a class="active" href="#" id="navhome">WORLD</a></li>
+      <li><a href="#about">HOME</a></li>
+      <li><a href="#events">ABOUT</a></li>
+      <li><a href="#socials">COLLECT!</a></li>
+
+      
+    </ul>
+    <div class="icon menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    </div>
+</nav>
+
+<script>
+  const navbar = document.querySelector(".navbar");
+  const menu = document.querySelector(".menu-list");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    menu.classList.add("active");
+    menuBtn.classList.add("hide");
+  }
+  cancelBtn.onclick = ()=>{
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+
+  <section id="home">
+    <div class="container">
+      <div class="col-md-12">
+        <a href="#"><img src="images/world1.png" id="logo2"></a>
+      </div></div></div>
+    <img src="images/back.png" id="back">
+    <img src="images/mid.png" id="mid">
+    <img src="images/front.png" id="front">
+  </section>
+
+
+
+<!-----------About--------------->
+
+<section id="mainsection">
+
+
+
+
+
+ <!-----------social--------------->   
+  <section id="socials2">
+    <div class="container text-center">
+      
+      
+      <p class="socialtext2">-</p>
+      <div class="social-icons">
+        <div class="col-md-12">
+        
+        
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+      
+      
+      <p class="calendartext">AS SEEN ON:</p>
+        <div class="calendar-icons2">
+          <div class="col-md-12">
+          <a href="#"><img src="images/SOCIAL-TWITTER-white2.png"></a>
+          <a href="#"><img src="images/discord2.png"></a>
+          <a href="#"><img src="images/SOCIAL-OPENSEA2.png"></a>
+          <a href="#"><img src="images/etherscan-logo-circle.png"></a>
+          <a href="#"><img src="images/LMNFT.png"></a>
+          <a href="https://nftcalendar.io/"><img src="images/NFTCALENDAR.webp"></a>
+          <a href="#"><img src="images/nftwatcher2.png"></a>
+          <a href="https://www.nestree.io/"><img src="images/nestree.png"></a>
+          </div>
+       
+      </div>
+    </div>
+    </section>
+<!-----------FOOTER--------------->   
+    <section id="arsbg">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <h1 class="ars"> <img src="images/nav.png" class="navlogo">
+          名無し (Nanashi) © 2023. All rights reserved. </h1>
+</section>
+</section>
+
+<script src="smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script> 
+</body>
+
+</html>
