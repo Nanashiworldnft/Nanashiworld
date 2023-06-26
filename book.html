@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Nanashi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="shortcut icon" type="image/png" href="images/nav.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+    
+    
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+    <div class="logo"><a href="#">BOOK OF NANASHI</a></div>
+    <ul class="menu-list">
+      <div class="icon cancel-btn">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      
+
+      
+    </ul>
+    <div class="icon menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    </div>
+</nav>
+
+<script>
+  const navbar = document.querySelector(".navbar");
+  const menu = document.querySelector(".menu-list");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    menu.classList.add("active");
+    menuBtn.classList.add("hide");
+  }
+  cancelBtn.onclick = ()=>{
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+
+  <section id="home">
+    <img src="images/BOOKLOGO.png" id="logo1">
+    <img src="images/back.png" id="back">
+    <img src="images/mid.png" id="mid">
+    <img src="images/front.png" id="front">
+  </section>
+
+
+
+
+<!-----------About--------------->
+
+<section id="mainsection">
+<section id="about">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+    
+    <h4 class="aboutus">BOOK OF NANASHI</h4>
+  </div>
+
+  
+  <div class="col-md-12">
+    <h1 class="aboutus1">It is a book that will be published for the community to know more about the unkown world of Nanashi. It is where Nanashi's adventure is written.</h1>
+
+    <h1 class="aboutus2">Unlock everything about Nanashi and his Nakama. Learn why Nanashi is traveling in this multi-dimensional world. Join his adventure finding about himself and what he is fighting for.
+    </h1>
+
+      <h1 class="aboutus2">Know the story behind the equipment in the trading cards and who actually owns them. Unlock misteries after mistery.
+      </h1>
+
+      <h1 class="aboutus2">Nanashi NFT holders have the power to influence the storyline; they can vote on what will happen next to certain events and characters.
+      </h1>
+
+      <h1 class="aboutus3"></h1>
+ 
+  </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+
+<!-----------social--------------->   
+<section id="socials">
+  
+<div class="container text-center">
+    
+    
+    <p class="calendartext">AS SEEN ON:</p>
+      <div class="calendar-icons2">
+        <div class="col-md-12">
+        <a href="https://twitter.com/Nanashi_Isekai"><img src="images/SOCIAL-TWITTER-white2.png"></a>
+
+        <a href="https://opensea.io/collection/nanashi-worldofsteam"><img src="images/SOCIAL-OPENSEA2.png"></a>
+        <a href="https://etherscan.io/token/0x5daea4b142f1302c3f1aeb9d99860881092448e4"><img src="images/etherscan-logo-circle.png"></a>
+        <a href="https://thirdweb.com/"><img src="images/thirdweblogo.png"></a>
+        <a href="https://nftcalendar.io/"><img src="images/NFTCALENDAR.webp"></a>
+        <a href="#"><img src="images/nftwatcher2.png"></a>
+        <a href="https://www.nestree.io/"><img src="images/nestree.png"></a>
+        </div>
+     
+    </div>
+  </div>
+  </section></section>
+<!-----------FOOTER--------------->   
+    <section id="arsbg">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <h1 class="ars"> <img src="images/nav.png" class="navlogo">
+          名無し (Nanashi) © 2023. All rights reserved. </h1>
+</section>
+
+
+<script src="smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script> 
+</body>
+
+</html>
