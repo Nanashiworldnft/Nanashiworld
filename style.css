@@ -134,6 +134,8 @@ body
 }
 
 
+
+
 #home
 {
     position: relative;
@@ -503,6 +505,96 @@ section #text span
     z-index: -1;
 }
 
+/*------------------Roadmap--------------*/
+
+#roadmap
+{
+    background-image: linear-gradient(to bottom, #000000, rgb(0, 0, 0));
+    padding: 20 !important;
+    margin: 0;
+    
+}
+
+.roadmaptext
+{
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+    font-weight: 800;
+    margin-top: 100px;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+.worldtext1
+{
+    font-size: 17px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+
+
+#mint-button-container
+{
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#mint-counter 
+{
+    color: wheat;
+    margin-bottom: 0px;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+}
+
+#worldicon
+{
+    background-image: linear-gradient(to bottom, #000000, rgb(0, 0, 0));
+    padding: 20 !important;
+    margin-top: 30px;
+
+    
+}
+
+
+.road-icons2 img
+{
+    transition: 0.5s;
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+
+    
+}
+.road-icons2 a:hover img
+{
+    transform: translateY(-15px);
+}
+
+
+
+
+
+
 /*------------------world--------------*/
 
 #world
@@ -656,7 +748,7 @@ section #text span
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 800;
-    margin-top: 100px;
+    margin-top: 60px;
     font-family: 'Teko', sans-serif;
     text-align: center;
     letter-spacing: 2px;
@@ -697,6 +789,27 @@ section #text span
     
 }
 .calendar-icons2 a:hover img
+{
+    transform: translateY(-15px);
+}
+
+
+.link-icons2 img
+{
+    transition: 0.5s;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+    width: 318px;
+    height: 140px;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 40px;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+}
+.link-icons2 a:hover img
 {
     transform: translateY(-15px);
 }
